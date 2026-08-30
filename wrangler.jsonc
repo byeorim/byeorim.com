@@ -4,5 +4,10 @@
   "compatibility_date": "2026-08-30",
   "assets": {
     "directory": "./public"
-  }
+  },
+  // 커스텀 도메인. custom_domain: true 면 wrangler가 DNS 레코드까지 만들어준다.
+  "routes": [
+    { "pattern": "byeorim.com", "custom_domain": true },
+    { "pattern": "www.byeorim.com", "custom_domain": true }
+  ]
 }
