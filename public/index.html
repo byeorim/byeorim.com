@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>byeorim</title>
+<meta name="description" content="byeorim — 만들고 있습니다.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔨</text></svg>">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfbfa;
+    --fg: #1b1b1a;
+    --muted: #6f6f6b;
+    --rule: #e0e0dc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #121211; --fg: #ececea; --muted: #8f8f8a; --rule: #2a2a28; }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font: 16px/1.6 ui-sans-serif, -apple-system, "Pretendard", "Apple SD Gothic Neo",
+          "Segoe UI", system-ui, sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    -webkit-font-smoothing: antialiased;
+  }
+  main { max-width: 30rem; width: 100%; }
+  h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 12vw, 4rem);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1;
+  }
+  .tagline { margin: 1.25rem 0 0; color: var(--muted); }
+  hr { border: 0; border-top: 1px solid var(--rule); margin: 2.5rem 0 1.25rem; }
+  .meta {
+    display: flex;
+    gap: 1.25rem;
+    flex-wrap: wrap;
+    font-size: 0.875rem;
+    color: var(--muted);
+  }
+  .meta a { color: inherit; text-decoration: none; border-bottom: 1px solid var(--rule); }
+  .meta a:hover { color: var(--fg); border-bottom-color: currentColor; }
+</style>
+</head>
+<body>
+  <main>
+    <h1>byeorim</h1>
+    <p class="tagline">아직 아무것도 없습니다. 자리부터 잡아두는 중.</p>
+    <hr>
+    <div class="meta">
+      <a href="https://github.com/byeorim">GitHub</a>
+      <span>byeorim.com</span>
+    </div>
+  </main>
+</body>
+</html>
